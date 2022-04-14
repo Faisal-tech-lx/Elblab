@@ -1,7 +1,7 @@
-- host: all
+- host: localhost 
   become: yes
   tasks:
-  - name: INstall haproxy
+  - name: restart sshd
     yum: 
-      name: haproxy
-      stat: present
+      name: sshd
+      stat: restarted
