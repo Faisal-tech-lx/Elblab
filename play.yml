@@ -1,0 +1,7 @@
+- host: all
+  become: yes
+  tasks:
+  - name: INstall haproxy
+    yum: 
+      name: haproxy
+      stat: present
